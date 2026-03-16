@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BurgerCool</title>
+    <link rel="stylesheet" href="{% static 'system/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="{% static 'system/img/menu-icon.png' %}" alt="menu">
+        </div>
+
+        <h1>BurgerCool</h1>
+
+        <div class="cart">
+            <img src="{% static 'system/img/cart-icon.png' %}" alt="menu">
+        </div>
+    </header>
+
+    <div class="menu-images">
+        <img src="{% static 'system/img/burger2.1.png' %}"
+         alt="Заглавная картинка страницы"
+         width="223" height="116">
+        <img src="{% static 'system/img/burger.png' %}"
+         alt="Заглавная картинка страницы"
+         width="466" height="247">
+        <img src="{% static 'system/img/burger2.0.png' %}"
+         alt="Заглавная картинка страницы"
+         width="223" height="116">
+    </div>
+
+    <div class="offers-wrapper">
+        <div class="offers">
+            Выгодные предложения
+        </div>
+    </div>
+
+    {% for dish in dishes %}
+        <p>{{ dish.name }} - {{ dish.price }}</p>
+    {% endfor %}
+
+</body>
+</html>
