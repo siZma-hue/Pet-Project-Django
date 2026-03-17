@@ -42,21 +42,48 @@ header {
     background-color: DarkOrange;
     height: 40px;
     width: 220px;
-    font-size: 15px;
     border-radius: 100px;
     line-height: 40px;
     text-align: center;
     margin: 50px auto;
 }
 
+.offers h2 {
+    font-size: 1em;
+}
+
 .offers-box {
-    columns: 100px 3;
-    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
     text-align: center;
 }
 
 .box {
-    height: 172px;
     width: 344px;
-    border: 10px orange;
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.offers-box h3 {
+    font-size: 15px;
+}
+
+.offers-box p {
+    font-size: 13px;
+    padding: 18px;
+    font-family: Verdana, sans-serif;
+}
+
+.offers-box span {
+    font-size: 15px;
+    color: red;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
 }
