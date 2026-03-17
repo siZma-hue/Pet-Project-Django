@@ -12,8 +12,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    margin: 120px auto;
+    gap: 50px;
+    margin: 10px auto;
 }
 
 .menu-images img {
@@ -25,6 +25,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .menu img {
@@ -35,14 +37,26 @@ header {
     width: 33px;
 }
 
-.offers-wrapper {
-    display: flex;
-    justify-content: center;
-}
 
 .offers {
     background-color: DarkOrange;
-    padding: 15px 35px;
-    border-radius: 40px;
-    font-weight: 600;
+    height: 40px;
+    width: 220px;
+    font-size: 15px;
+    border-radius: 100px;
+    line-height: 40px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.offers-box {
+    columns: 100px 3;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.box {
+    height: 172px;
+    width: 344px;
+    border: 10px orange;
 }
